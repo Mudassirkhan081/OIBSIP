@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Convert temperatures between Celsius, Fahrenheit and Kelvin with input validation and absolute-zero handling." />
+  <title>Temperature Converter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="app">
+    <section class="card" aria-labelledby="title">
+      <header class="card__head">
+        <div class="logo" aria-hidden="true">🌡️</div>
+        <h1 id="title">Temperature Converter</h1>
+        <p class="sub">Convert between Celsius, Fahrenheit &amp; Kelvin</p>
+      </header>
+
+      <form id="converterForm" novalidate>
+        <!-- Value input -->
+        <div class="field">
+          <label for="tempInput">Temperature value</label>
+          <input
+            id="tempInput"
+            type="text"
+            inputmode="decimal"
+            placeholder="e.g. 36.6"
+            autocomplete="off"
+            aria-describedby="error"
+          />
+        </div>
+
+        <!-- Input unit selector (radio buttons styled as a segmented control) -->
+        <fieldset class="units">
+          <legend>Convert from</legend>
+          <div class="segmented" role="radiogroup" aria-label="Input unit">
+            <label class="seg">
+              <input type="radio" name="unit" value="C" checked />
+              <span>Celsius °C</span>
+            </label>
+            <label class="seg">
+              <input type="radio" name="unit" value="F" />
+              <span>Fahrenheit °F</span>
+            </label>
+            <label class="seg">
+              <input type="radio" name="unit" value="K" />
+              <span>Kelvin K</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn" id="convertBtn">Convert</button>
+
+        <!-- Inline error message -->
+        <p class="error" id="error" role="alert" aria-live="assertive"></p>
+      </form>
+
+      <!-- Results: all units shown at once -->
+      <section class="results" id="results" aria-live="polite" hidden>
+        <h2 class="results__title">Results</h2>
+        <div class="result" data-unit="C">
+          <span class="result__label">Celsius</span>
+          <span class="result__value"><strong id="outC">—</strong> °C</span>
+        </div>
+        <div class="result" data-unit="F">
+          <span class="result__label">Fahrenheit</span>
+          <span class="result__value"><strong id="outF">—</strong> °F</span>
+        </div>
+        <div class="result" data-unit="K">
+          <span class="result__label">Kelvin</span>
+          <span class="result__value"><strong id="outK">—</strong> K</span>
+        </div>
+      </section>
+    </section>
+
+    <p class="foot">OIBSIP · Web Dev L1 · Task 3 — built with HTML, CSS &amp; vanilla JavaScript</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

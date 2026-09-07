@@ -27,17 +27,16 @@ to reach you — fully responsive on desktop and mobile.
 
 ## ✏️ Personalisation status
 **Already filled in:** name (*Mudassir Khan*), role (*Front-End Developer*),
-and email (*muddikhan081@gmail.com*).
+email, **GitHub** link, and **LinkedIn** link
+(`linkedin.com/in/mudassirkhan-webdev`).
 
-**Still left for you to add** (search `index.html` for `href="#"`):
+**Optional extras** (search `index.html` for `href="#"`):
 
 | Item | Where | What to do |
 |------|-------|-----------|
-| GitHub link | hero + contact icons | Put your real `https://github.com/<username>` URL |
-| LinkedIn link | hero + contact icons | Put your real LinkedIn profile URL |
-| Twitter/X link | contact icons | Optional — add or delete the icon |
-| Profile photo | hero avatar | Optional — replace the `MK` `.avatar` block with `<img src="your-photo.jpg" alt="Mudassir Khan">` |
-| Project links | project cards | Optional — link each card's *Live demo* / *GitHub* to your real repos |
+| Live demo links | project cards | Link to your deployed sites once you host them |
+| Twitter/X link | contact icons | Add your handle or delete the icon |
+| Profile photo | hero avatar | Replace the `MK` `.avatar` block with `<img src="your-photo.jpg" alt="Mudassir Khan">` |
 
 > If you don't want your email public, just delete the `muddikhan081@gmail.com`
 > lines in the Contact section.

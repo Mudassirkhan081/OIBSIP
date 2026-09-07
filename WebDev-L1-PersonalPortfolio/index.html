@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio of Mudassir Khan — Front-End Developer. Projects, skills and contact." />
+  <title>Mudassir Khan — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="home">
+    <div class="container nav__inner">
+      <a href="#home" class="brand"><span class="brand__dot"></span>Mudassir Khan</a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav aria-label="Primary">
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact" class="nav__cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <span class="eyebrow">👋 Hello, I'm</span>
+        <h1 class="hero__name">Mudassir Khan</h1>
+        <h2 class="hero__role">Front-End Developer</h2>
+        <p class="hero__tag">
+          I design and build clean, responsive websites and web apps that are a
+          pleasure to use. Currently sharpening my skills through the Oasis
+          Infobyte internship.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn">View my work</a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+        <div class="hero__socials">
+          <a href="https://github.com/Mudassirkhan081" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">GitHub ↗</a>
+          <a href="#" aria-label="LinkedIn" title="LinkedIn">LinkedIn ↗</a>
+        </div>
+      </div>
+
+      <div class="hero__avatar">
+        <!-- Replace this block with <img src="your-photo.jpg" alt="Mudassir Khan"> -->
+        <div class="avatar" aria-label="Profile photo placeholder">
+          <span class="avatar__initials">MK</span>
+          <span class="avatar__hint">Add your photo</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">About</span>
+        <h2 class="section__title">A little about me</h2>
+      </div>
+      <div class="about">
+        <p class="about__lead">
+          I'm a <strong>Front-End Developer</strong> passionate about turning ideas into
+          fast, accessible, well-crafted web experiences. I enjoy the whole journey —
+          from a blank Figma frame to shipping polished, responsive code.
+        </p>
+        <p>
+          When I'm not coding, you'll find me exploring new tools, contributing to
+          small projects, and learning something new every week. I care about clean
+          code, thoughtful design, and building things that genuinely help people.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Skills</span>
+        <h2 class="section__title">Things I work with</h2>
+        <p class="section__lead">Swap these for your own stack.</p>
+      </div>
+      <div class="skills">
+        <span class="chip">HTML5</span>
+        <span class="chip">CSS3</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">Responsive Design</span>
+        <span class="chip">Git &amp; GitHub</span>
+        <span class="chip">Flexbox &amp; Grid</span>
+        <span class="chip">Figma</span>
+        <span class="chip">Accessibility</span>
+        <span class="chip">React <em>(learning)</em></span>
+        <span class="chip">Node.js <em>(learning)</em></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Projects</span>
+        <h2 class="section__title">Selected work</h2>
+        <p class="section__lead">Replace the links with your real repositories.</p>
+      </div>
+      <div class="projects">
+
+        <article class="project">
+          <div class="project__thumb project__thumb--1" aria-hidden="true">
+            <span>01</span>
+          </div>
+          <div class="project__body">
+            <h3>Product Landing Page</h3>
+            <p>A responsive marketing page built with semantic HTML and modern CSS layout (Flexbox &amp; Grid), with a consistent design system.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+            <div class="project__links">
+              <a href="#" class="link">Live demo ↗</a>
+              <a href="https://github.com/Mudassirkhan081/OIBSIP" target="_blank" rel="noopener" class="link link--muted">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__thumb project__thumb--2" aria-hidden="true">
+            <span>02</span>
+          </div>
+          <div class="project__body">
+            <h3>Temperature Converter</h3>
+            <p>An interactive tool that converts between Celsius, Fahrenheit and Kelvin in real time, with input validation and edge-case handling.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <div class="project__links">
+              <a href="#" class="link">Live demo ↗</a>
+              <a href="https://github.com/Mudassirkhan081/OIBSIP" target="_blank" rel="noopener" class="link link--muted">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__thumb project__thumb--3" aria-hidden="true">
+            <span>03</span>
+          </div>
+          <div class="project__body">
+            <h3>To-Do Web App</h3>
+            <p>A task manager with add, edit, complete and delete features, plus localStorage persistence so tasks survive a refresh.</p>
+            <ul class="tags"><li>JavaScript</li><li>DOM</li></ul>
+            <div class="project__links">
+              <a href="#" class="link">Live demo ↗</a>
+              <a href="https://github.com/Mudassirkhan081/OIBSIP" target="_blank" rel="noopener" class="link link--muted">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section section--alt" id="contact">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Contact</span>
+        <h2 class="section__title">Let's work together</h2>
+        <p class="section__lead">Have a project or opportunity in mind? Say hello.</p>
+      </div>
+
+      <div class="contact">
+        <div class="contact__info">
+          <p class="contact__line"><strong>Name</strong>Mudassir Khan</p>
+          <p class="contact__line"><strong>Email</strong>
+            <a href="mailto:muddikhan081@gmail.com">muddikhan081@gmail.com</a>
+          </p>
+          <div class="contact__socials">
+            <a href="https://github.com/Mudassirkhan081" target="_blank" rel="noopener" class="social" aria-label="GitHub">GH</a>
+            <a href="#" class="social" aria-label="LinkedIn">in</a>
+            <a href="#" class="social" aria-label="Twitter">X</a>
+          </div>
+        </div>
+
+        <!-- Front-end demo form. Wire it to a service (e.g. Formspree) or a backend later. -->
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="cname">Your name</label>
+            <input id="cname" name="name" type="text" placeholder="Jane Doe" required />
+          </div>
+          <div class="field">
+            <label for="cemail">Your email</label>
+            <input id="cemail" name="email" type="email" placeholder="jane@example.com" required />
+          </div>
+          <div class="field">
+            <label for="cmsg">Message</label>
+            <textarea id="cmsg" name="message" rows="4" placeholder="Tell me about your idea…" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send message</button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 Mudassir Khan. Built with HTML, CSS &amp; JavaScript.</p>
+      <a href="#home" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
